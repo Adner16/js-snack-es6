@@ -8,26 +8,29 @@ const bici = [
 ];
 console.table(bici);
 
-// template litaral
+// first version
+const pesoList = [];
 
-// const pesoList = [];
+for (i = 0; i < bici.length; i++){
+    const currentPeso = bici[i].peso;
+    console.log(currentPeso);
+    pesoList.push(currentPeso);
+}
+console.table(pesoList);
 
-// for (i = 0; i < bici.length; i++){
-//     const currentPeso = bici[i].peso;
-//     console.log(currentPeso);
-//     pesoList.push(currentPeso);
-// }
-// console.table(pesoList);
+console.log(Math.min(...pesoList));
 
-// console.log(Math.min(...pesoList));
 
-// destructuring
+
+// version destructuring
 
 const pesoList = [];
 
 
 for (i = 0; i < bici.length; i++){
-    const [{peso}] = bici;
+    const {peso} = bici[i];
     pesoList.push(peso);
 }
     console.table(pesoList);
+
+    console.log(Math.min(...pesoList));
