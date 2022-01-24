@@ -26,7 +26,7 @@ for(i = 0; i < squadre.length; i++){
     const updatedTeam = {currentName, currentPunti, currentFalli};
     updatedSquadre.push(updatedTeam);
 }
-console.table(updatedSquadre);
+console.log(updatedSquadre);
 
 
 // version destructuring
@@ -40,4 +40,4 @@ for(i = 0; i < squadre.length; i++){
     updatedSquadre.push(updatedTeam);
 
 }
-console.table(updatedSquadre);
+console.log(updatedSquadre);
